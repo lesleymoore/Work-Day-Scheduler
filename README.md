@@ -15,5 +15,7 @@ This is a work day calender, so the user can add events and manage their time th
 
 ## Preview
 
+<img src=./image1.png>
+
 ## Completed Website 
 [Work Day Scheduler](https://lesleymoore.github.io/Work-Day-Scheduler/)
