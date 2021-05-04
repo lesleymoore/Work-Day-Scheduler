@@ -1,9 +1,24 @@
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do"));
+var colors = function(){
+    var hour = $(".hour").text();
+    console.log(hour);
 
 var time = moment().format('h');
 console.log(time);
-const colors = document.getElementsByClassName("hour");
+
+$(".description").removeClass("present past future");
+
+if (hour < time) {
+    $(".description").addClass("past");
+} else if (hour > time) {
+    $(".description").addClass("future");
+}else {
+    $(".description").addClass("present");
+}
+};
+
+colors();
 
 $(".saveBtn").on("click", function(e) {
 var idvalue = $(this).attr("id")
